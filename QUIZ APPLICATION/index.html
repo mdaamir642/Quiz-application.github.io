@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <!-- SIGIN - PAGE  -->
+
+
+    <div class="signin-page" id="first-page">
+        <img src="../image/quiz.png" alt="">
+
+        <div class="container">
+            <div class="top">
+                <h1>SIGN IN</h1>
+
+            </div>
+
+            <div class="mid">
+                <div class="properties">
+                    <label for="full-name">FULL NAME :</label>
+                    <label for="father-name">FATHER NAME :</label>
+                    <label for="email">EMAIL :</label>
+
+                    <label for="roll-num"> Password :</label>
+
+                </div>
+
+               
+                    <div class="values">
+                        <input id="full-name" class="special" name=full-name type="text"
+                            placeholder="enter your full name" required>
+
+                        <input id="father-name" class="special" name=father-name type="text"
+                            placeholder="enter your father name" required>
+
+                        <input id="email" class="special" type="text" name="email"
+                            placeholder="enter your email address" >
+
+                        <input id="password" class="special" type="Password" name="password"
+                            placeholder="enter your Password " required>
+                    </div>
+            </div>
+            <div class="bottom">
+                <button class="sign-in" onclick="signIn()"> SIGN IN</button>
+            </div>
+            <div id="invalid"></div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <!-- QUIZ START PAGE -->
+
+
+
+
+    <div class="info" id="second-page">
+
+
+
+        <div class="rule">
+            <h2 id="greet"></h2>
+            <h3>Questions :07 </h3>
+            <h3>TIME:2 MINUTE</h3>
+            <h3>PASSING MARKS :70%</h3>
+        </div>
+        <div class="start-quiz">
+            <button class="start-btn" onclick="startQuiz()">START QUIZ</button>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- QUIZ PAGE -->
+
+
+
+    <div id="third-page">
+        <span class="quiz">
+            <h1>QUIZ APP</h1>
+            <div class="quiz-app">
+                <div class="header">
+                    <h2>Quiz Application</h2>
+                    <h3>Time Left : <span class="timer"> <span id="time">120 </span> second </span></h3>
+
+                </div>
+                <hr>
+                <div class="
+">
+
+                    <P class="ques" id="ques">Ques: Lorem ipsum dolor, sit amet consectetur adipisicing.</P>
+                    <ul id="quizOptions" class="quizOptions">
+                        <li>a: Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
+                        <li>b: Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
+                        <li> c: Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
+                        <li> d: Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
+                    </ul>
+
+                </div>
+
+                <hr />
+                <div class="footer">
+                    <h4><span id="ques-num">0</span> of 7 Questions</h4>
+                    <button class="btn" onclick="nextQues()">Next</button>
+                </div>
+
+
+
+            </div>
+        </span>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- result Page -->
+
+
+
+
+    <div class="result-page" id="result-page">
+        <h1>RESULT</h1>
+        <h3 class="result">TOTAL QUESTION : <span class="result-edit" id="total-ques"> 00</span></h3>
+        <h3 class="result">CORRECT ANSWER :<span class="result-edit" id="correct"> 00</span></h3>
+        <h3 class="result">WRONG ANSWER :<span class="result-edit" id="wrong"> 00</span></h3>
+        <h3 class="result">TOTAL POINT :<span class="result-edit" id="total"> 00</span></h3>
+        <h3 class="result">PERCENTAGE : <span class="result-edit" id="percent">00</span> %</h3>
+        <div id="result"> </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
